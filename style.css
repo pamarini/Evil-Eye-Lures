@@ -119,6 +119,9 @@ ul li a:hover{
 }
 .footer{
   background-color: lightslategray;
+  text-align: center;
+  height: 80px;
+  font-size: 60px;
 }
 
 /* ============== 2ND PAGE =========*/
