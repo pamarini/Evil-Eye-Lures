@@ -2,6 +2,7 @@
 <html lang="en">
 
 <link rel="stylesheet" href="style.css">
+<script src ="script.js"></script>
 <!-- Latest compiled and minified CSS -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
 
                     <li><a href="#"><b>Lures</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
-                    <li><a href="#news"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                     <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span></a></li>
                 </ul>
 
@@ -87,17 +88,4 @@
     </div>
 </body>
 
-<!-- line wouldnt work in seperate js file-->
-<script>
-  var nav = document.getElementById('nav');
-  window.onscroll = function()
-  {
-    if (window.pageYOffset>300){
-      nav.style.background = "#FddFFF80";
-      //nav.style.opacity = .4;
-    }else{
-      nav.style.background = "transparent";
-    }
-  }
-</script>
 </html>
