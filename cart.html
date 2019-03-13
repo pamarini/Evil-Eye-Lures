@@ -1,117 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
-<link rel="stylesheet" href="style.css">
-<script src ="script.js"></script>
+<title>Fishing Lures</title>
+
+<link rel="stylesheet" href="css/style.css">  <!--Resource style -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Latest compiled and minified CSS -->
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<body>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+</head>
 
+<header>
+       <!-- <style>header{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/lightHouse.png);height: 100vh;background-size: cover;background-position: center;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);}</style> -->
+        
         <nav class="navbar navbar-transparent navbar-fixed-top" id='nav'>
-    
             <div class= "main">
                 <div class="logo">
-                    <img src="images/logo.png" >
+                    <img src="img/logo.png" >
                 </div> 
                 <ul>
-                    <li><a href="index.html"><b>Home</b></a></li>
-    
+                    <li><a href="index.html" class="active"><b>Home</b></a></li>
                     <li><a href="#"><b>Lures</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
-                    <li><a href="cart.html" class="active"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                     <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span></a></li>
                 </ul>
     
-            </div>
+            </div> <!-- main-->
+            
         </nav>  
-            
-        <header></header>
-            <section class="container content-section">
-                <h2 class="section-header">MUSIC</h2>
-                <div class="shop-items">
-                    <!--
-                    <div class="shop-item">
-                        <span class="shop-item-title">Album 1</span>
-                        <img class="shop-item-image" src="Images/Album 1.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$12.99</span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                    </div>
+</header>
+
+		<!-- requried-jsfiles-for owl -->
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <script src="js/owl.carousel.js"></script>
+            <script>
+        $(document).ready(function() {
+          $("#owl-demo").owlCarousel({
+            items : 1,
+            lazyLoad : true,
+            autoPlay : true,
+            navigation : true,
+            navigationText :  false,
+            pagination : false,
+          });
+        });
+</script>
+
+<!-- //requried-jsfiles-for owl -->
+<div id="owl-demo" class="owl-carousel">
+    <div class="item text-center image-grid">	
+        <ul>
+        <li><img src="img/lure2.png" alt=""></li>			    
+        <li><img src="img/lure3.png" alt=""></li>				 
+        <li><img src="img/lure4.png" alt=""></li>				 
+        </ul>
+    </div>
+    <div class="item text-center image-grid">	
+        <ul>
+        <li><img src="img/lure3.png" alt=""></li>				 
+        <li><img src="img/lure5.png" alt=""></li>				 
+        <li><img src="img/lure1.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="item text-center image-grid">	
+        <ul>
+        <li> <img src="img/lure1.png" alt=""></li>			    
+        <li><img src="img/lure4.png" alt=""></li>				 
+        <li><img src="img/lure2.png" alt=""></li>
+        </ul>
+    </div>
+
+    </div> 	
+	
+</div>
     
-    
-                    <div class="shop-item">
-                        <span class="shop-item-title">Album 2</span>
-                        <img class="shop-item-image" src="Images/Album 2.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$14.99</span>
-                            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div class="shop-item">
-                        <span class="shop-item-title">Album 3</span>
-                        <img class="shop-item-image" src="Images/Album 3.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$9.99</span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                    </div> -->
-    
-                    <div class="shop-item">
-                        <span class="shop-item-title">Album 4</span>
-                        <img class="shop-item-image" src="Images/Album 4.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$19.99</span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--
-            <section class="container content-section">
-                <h2 class="section-header">MERCH</h2>
-                <div class="shop-items">
-                    <div class="shop-item">
-                        <span class="shop-item-title">T-Shirt</span>
-                        <img class="shop-item-image" src="Images/Shirt.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$19.99</span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                    </div>
-    
-                    <div class="shop-item">
-                        <span class="shop-item-title">Coffee Cup</span>
-                        <img class="shop-item-image" src="Images/Cofee.png">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$6.99</span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            
-        
-            </body>
-            <section class="container content-section">
-                <h2 class="section-header">CART</h2>
-                <div class="cart-row">
-                    <span class="cart-item cart-header cart-column">ITEM</span>
-                    <span class="cart-price cart-header cart-column">PRICE</span>
-                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                </div>
-                <div class="cart-items">
-                </div>
-                <div class="cart-total">
-                    <strong class="cart-total-title">Total</strong>
-                    <span class="cart-total-price">$0</span>
-                </div>
-                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-            </section>
-        
-    </html>
+</body>
+</html>
