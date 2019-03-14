@@ -180,7 +180,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 main {
@@ -197,7 +197,7 @@ h1 {
     font-size: 3.2rem;
   }
 }
-
+*/
 .cd-add-to-cart {
   display: inline-block;
   padding: .6em 1.1em;
@@ -948,7 +948,8 @@ Main Components
     opacity: 0;
   }
 }
-
+ 
+/*END CSS FOR CART */
 
 html, body{
   font-family: 'Open Sans', sans-serif;
@@ -1367,6 +1368,8 @@ transition: all 0.3s ease-in-out;
 color: #52ABDF;
 }
 /* start rooms and suits */
+
+/*
 .main{
 padding: 4% 2%;
 }
@@ -1472,6 +1475,8 @@ float: left;
 width:73.063156%;
 margin-left: 4.063156%;
 }
+
+*/
 /* res_online */
 .res_online h4 {
 text-transform: capitalize;
@@ -1610,7 +1615,7 @@ list-style-type: none;
 .items li a span{
 width:25px;
 height:25px;
-background:url('../img/splits.png') no-repeat 0px 0px;
+background:url('../images/splits.png') no-repeat 0px 0px;
 display:block;
 }
 .items li a span.img1{
@@ -2653,16 +2658,14 @@ margin-top: 2em;
 padding-top: 2em;
 }
 }
-/*
+
 @media (max-width:1024px){
 .logo {
 padding-top: 1.3em;
 }
 .logo img {
-width: 95%;
+width: 9%;
 }
-
-*/
 .top-menu ul li a {
 padding: 2.1em 0.5em;
 }
@@ -2689,6 +2692,7 @@ top: 32%;
 left: 5%;
 width: 90%;
 }
+
 .package {
 padding: 7% 0 0 0;
 min-height: 403px;
@@ -2875,6 +2879,9 @@ padding: 3px;
 padding-bottom: 3em;
 }
 }
+
+
+
 @media (max-width:768px){
 .logo {
 float: left;
@@ -2979,6 +2986,7 @@ width: 80%;
 width: 70%!important;
 }
 /*----*/
+/*
 .service_list li h3 {
 margin: 5px 0 0px;
 font-size: 13px;
@@ -3242,13 +3250,11 @@ height: 249px;
 width: 100%;
 }
 }
-/*
 @media (max-width:480px){
 .logo {
 padding: 0.7em;
 width: 60%;
 }
-*/
 span.menu {
 margin: 8px 10px 0 0;
 }
@@ -3312,9 +3318,6 @@ height: 97px;
 .image-grid ul li {
 width: 28%;
 }
-
-/* owl */
-
 .owl-next {
 right: -11%;
 top: 31%;
