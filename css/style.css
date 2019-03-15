@@ -75,10 +75,16 @@ ul li a:hover{
 .title{
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 15%;
   font-size: 69px;
-  
 }
+.luretitle{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 69px;
+}
+
 /* location of link button; how its made and gallery*/
 .button{
   position: absolute;
@@ -121,10 +127,14 @@ ul li a:hover{
   color: black;
   text-align: center;
   font-size: 60px;
-  height: 550px;
+  height: 750px;
 }
 .sale.a{
   font-size: 26px;
+}
+.sale img{
+  border-radius: 50%;
+  width: 50%;
 }
 .center{
   display: block;
@@ -159,14 +169,33 @@ ul li a:hover{
     font-size: 60px;
     height: 301px;
 }
+/*
 header{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Evil-Eye-Lures/img/lightHouse.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
+}*/
+
+/* START OF LURE PAGE LURE STYLE */
+.row {
+  background:url(../img/package-bg.jpg);
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  height: 1500px;
 }
-
-
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 40%;
+}
 /* START OF CSS FOR CART */
 /* -------------------------------- 
 
@@ -962,7 +991,10 @@ Main Components
   }
 }
 
-/*END CSS FOR CART */
+/*================END CSS FOR CART==================== */
+
+
+
 /* START OF NEW CSS I GUESS?? */
 html, body{
   font-family: 'Open Sans', sans-serif;
@@ -1043,7 +1075,7 @@ color:#fff;
 border-top:2px solid #FFD700;
 }
 .banner{
-background:url(../images/header.png);
+background:url(../img/lightHouse.png);
 
 /* background:#000000; */
 min-height:300px;
@@ -1305,6 +1337,7 @@ transition: all 0.3s ease-in-out;
 color: #9c9c9c;
 }
 }
+
 /* start soc_icons */
 .soc_icons {
 text-align: center;
@@ -1666,6 +1699,8 @@ margin-top: 1.5em;
 background:#00427a;
 min-height:150px;
 position:relative;
+bottom: 0px;
+
 }
 .fotter h3 label{
 color:#ffc20e;
@@ -1691,11 +1726,12 @@ height:277px;
 display:block;
 position:absolute;
 top:-75%;
-left:70%;
+left:60%;
 }
 .fotter-info{
 background:#063156;
 padding:4em 0;
+bottom: 0px;
 }
 .hotel-info{
 width:50%;
@@ -2273,6 +2309,9 @@ padding:0.2em;
 }
 .rslides_tabs {
   bottom: 10px;
+}
+#display{
+  width: 20%;
 }
 }
 @media (max-width:640px){

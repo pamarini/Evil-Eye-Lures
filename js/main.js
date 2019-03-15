@@ -169,17 +169,25 @@ jQuery(document).ready(function($){
 	}
 });
 
-// scrolling function
+//scrolling function for sticky nav bar 
 window.onscroll = function() {
 	if (window.pageYOffset>300){
-	  nav.style.background = "#FddFFF80";
+	  nav.style.background = "#FddFFFD9";
 	   //nav.style.opacity = .4;
 	  }	  
 	  else{ 
 		  nav.style.background = "transparent";
 	 }
-}
+} 
 
 
-
+// displaying pictures in gallery 
+var elements = document.getElementsByClassName("column");
+// Declare a "loop" variable
+var i;
+function two() {
+	for (i = 0; i < elements.length; i++) {
+	  elements[i].style.flex = "25%"; 
+	}
+  }
 
