@@ -2,11 +2,11 @@
 
 Primary style
 
--------------------------------- */
+-------------------------------- 
 *, *::after, *::before {
   box-sizing: border-box;
 }
-
+*/
 *{
   margin: 0;
   padding: 0;
@@ -19,29 +19,32 @@ Primary style
 |                                 |
 |---------------------------------*/
 /* linear gradient dims homepage 
+
+*/
 header{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/lightHouse.png);
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
 body{
-  padding-top: 0px;
+  padding-top: -10px;
 }
 /*title bar at top; position  */
 ul{
-  float:right;
   list-style-type: none; /*transparent*/
+  /*float: right;*/
+
 }
 /* text in title bar */
 ul li{
   display: inline-block;
-  padding: 25px 10px;
+  padding: 45px 10px;
   font-size: 20px;
 }
 /* just the box, change transparent to color for box around menu items */
 ul li a{
   text-decoration: none;
+  float: top;
   color: rgb(0, 0, 0);
   padding: 5px 20px;
   border: 1px solid transparent;
@@ -62,12 +65,12 @@ ul li a:hover{
   width: 80px;
   height: auto;
 }
-/*canvas */
+/*canvas 
 .main {
   max-width: 1200px;
   margin: auto;
   background-color: lightslategray;
-} 
+} */
 /* evil eye title */
 .title{
   position: absolute;
@@ -114,7 +117,7 @@ ul li a:hover{
 
 /* style for sale section of main page */
 .sale {
-  background-color: lightslategray;
+  background:url(../img/package-bg.jpg);
   color: black;
   text-align: center;
   font-size: 60px;
@@ -130,11 +133,12 @@ ul li a:hover{
   padding: 65px 10px;
   width: 30%;
 }
-.footer{
-  background-color: lightslategray;
+.nav-footer{
+  background-color: #2688d8;
   text-align: center;
   height: 80px;
   font-size: 60px;
+  padding: -5px;
 }
 
 /* ============== 2ND PAGE =========*/
@@ -161,6 +165,18 @@ header{
   background-size: cover;
   background-position: center;
 }
+
+
+/* START OF CSS FOR CART */
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
@@ -180,7 +196,7 @@ a {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 main {
@@ -197,15 +213,15 @@ h1 {
     font-size: 3.2rem;
   }
 }
-*/
+
 .cd-add-to-cart {
   display: inline-block;
-  padding: .6em 1.1em;
+  padding: 1.2em 1.8em;
   background: #2c97de;
   border-radius: 50em;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .1em;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   -webkit-transition: all .2s;
@@ -313,10 +329,9 @@ Main Components
       -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
           transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
-/*
 .cart-open .cd-cart-trigger::before {
   opacity: 0;
-}*/
+}
 .cart-open .cd-cart-trigger::after {
   opacity: 1;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -384,7 +399,6 @@ Main Components
       -ms-transform: scale(1);
           transform: scale(1);
 }
-
 .cd-cart-trigger:hover + div .wrapper {
   box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
 }
@@ -403,7 +417,6 @@ Main Components
 }
 .cd-cart .wrapper {
   position: absolute;
-  font-size: 40px;
   bottom: 0;
   right: 0;
   z-index: 2;
@@ -478,11 +491,11 @@ Main Components
   visibility: visible;
 }
 .cd-cart .checkout {
-  display: block; 
+  display: block;
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
-  background: #5e8ac4;
+  background: #2c97de;
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-size: 1.8rem;
@@ -618,7 +631,7 @@ Main Components
   color: #2b3e51;
 }
 .cd-cart h3 a:hover {
-  color: #dea62c;
+  color: #2c97de;
 }
 .cd-cart .price {
   float: right;
@@ -948,9 +961,9 @@ Main Components
     opacity: 0;
   }
 }
- 
-/*END CSS FOR CART */
 
+/*END CSS FOR CART */
+/* START OF NEW CSS I GUESS?? */
 html, body{
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
@@ -978,7 +991,8 @@ a:hover, a:focus {
 color:none;
 text-decoration: none;
 }
-/*-----start-header----*/
+/*-----start-header---- */
+
 .top-header{
 background:#00427a;
 }
@@ -1030,10 +1044,13 @@ border-top:2px solid #FFD700;
 }
 .banner{
 background:url(../images/header.png);
+
 /* background:#000000; */
 min-height:300px;
 padding:2em 0 4em 0;
 }
+
+
 .banner-info h3{
 color:#fff;
 font-weight: 200;
@@ -1543,7 +1560,7 @@ cursor: pointer;
 background: #228AC6;
 }
 .package{
-background:url(../images/package-bg.jpg) no-repeat 0px 0px;
+background:url(../img/package-bg.jpg) no-repeat 0px 0px;
 background-size:cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -1577,7 +1594,7 @@ cursor:pointer;
 }
 .image-grid ul li{
 display:inline-block;
-margin:1%;
+width: 20%;
 }
 .rooms{
 background:url(../images/rooms.jpg) repeat-y 0px 0px;
@@ -1668,13 +1685,13 @@ font-style:italic;
 margin:1.2em 0 0 2.7em;
 }
 .wolfie{
-background:url(../images/wolfie.png) no-repeat 0px 0px;
+background:url(../img/display.png) no-repeat 0px 0px;
 width:278px;
 height:277px;
 display:block;
 position:absolute;
-top:-84%;
-left:71%;
+top:-75%;
+left:70%;
 }
 .fotter-info{
 background:#063156;
@@ -1875,7 +1892,7 @@ color:#FFD700;
 }
 /*--FACILITIES-PAGE--*/
 .main_bg{
-background:url(../images/rooms.jpg) repeat-y 0px 0px;
+background:url(../img/package-bg.jpg) repeat-y 0px 0px;
 background-size:cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -2663,9 +2680,10 @@ padding-top: 2em;
 .logo {
 padding-top: 1.3em;
 }
+/*
 .logo img {
 width: 9%;
-}
+}*/
 .top-menu ul li a {
 padding: 2.1em 0.5em;
 }
@@ -2889,7 +2907,7 @@ padding: 1em;
 width: 30%;
 }
 .logo img {
-width: 100%;
+width: 25%;
 }
 .top-menu ul li a {
 padding: 2em 0.5em;
