@@ -23,15 +23,12 @@
     <style>header{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/lightHouse.png);height: 100vh;background-size: cover;background-position: center;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);}</style> 
     
     <nav class="navbar navbar-transparent navbar-fixed-top" id='nav'>
+            <div class="logo"><img src="img/logo.png" ></div> 
         <div class= "main">
-            <div class="logo">
-                <img src="img/logo.png" >
-            </div> 
             <ul>
-                <li><a href="index.html" class="active"><b>Home</b></a></li>
-                <li><a href="lures.html"><b>Lures</b></a></li>
-                <li><a href="#contact"><b>Contact</b></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                <li><a href="index.html" class="active"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="lures.html"><span class="glyphicon glyphicon-picture"></span></a></li>
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                 <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span></a></li>
             </ul>
 
@@ -54,6 +51,7 @@
 <link href="css/owl.carousel.css" rel="stylesheet">
 <script src="js/owl.carousel.js"></script>
 
+
     <script>
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
@@ -64,11 +62,12 @@ $(document).ready(function() {
     navigation : true,
     navigationText :  false,
     pagination : false,
+    dots: true,
   });
 });
 </script>
 <!-- //requried-jsfiles-for owl -->
-<div id="owl-demo" class="owl-carousel">
+<div id="owl-demo" class="owl-carousel owl-theme">
 <div class="item text-center image-grid">	
 <ul>
 <li><img src="img/lure2.png" alt=""></li>			    
@@ -80,14 +79,14 @@ $(document).ready(function() {
 <ul>
 <li><img src="img/lure3.png" alt=""></li>				 
 <li><img src="img/lure5.png" alt=""></li>				 
-<li><img src="img/lure1.png" alt=""></li>
+<li><img src="img/lure6.png" alt=""></li>
 </ul>
 </div>
 <div class="item text-center image-grid">	
 <ul>
-<li> <img src="img/lure1.png" alt=""></li>			    
+<li> <img src="img/lure2.png" alt=""></li>			    
 <li><img src="img/lure4.png" alt=""></li>				 
-<li><img src="img/lure2.png" alt=""></li>
+<li><img src="img/lure7.png" alt=""></li>
 </ul>
 </div>
 </div> 		
@@ -103,43 +102,8 @@ $(document).ready(function() {
         <img ahref="#" width = 250 src="img/lure2.png" class="center">
         <s>$15.99</s> $9.99<BR>
         <!--<a href="#0" class="cd-add-to-cart" data-price="9.99">Add To Cart</a> -->
-        <a href="lures.html" type ="button" class="btn btn-danger" > SHOP NOW</a>
-    </div>
-
-        
-    <div class="cd-cart-container empty">
-        <a href="#0" class="cd-cart-trigger">
-            Cart
-            <ul class="count"> <!-- cart items count -->
-                <li>0</li>
-                <li>0</li>
-            </ul> <!-- .count -->
-        </a>
-
-        <div class="cd-cart">
-            <div class="wrapper">
-                <header>
-                    <b>Cart</b>
-                    <span class="undo">Item removed. <a href="#0">Undo</a></span>
-                </header>
-                
-                <div class="body">
-                    <ul>
-                        <!-- products added to the cart will be inserted here using JavaScript -->
-                    </ul>
-                </div>
-
-                <footer>
-                    <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-                </footer>
-
-            </div> <!-- wrapper -->
-
-        </div> <!-- .cd-cart -->
-
-    </div> <!-- cd-cart-container -->
-
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <a href="cart.html" type ="button" class="btn btn-danger" > SHOP NOW</a>
+    </div> <!-- sale a-->
 
 </div> <!-- sale -->
 
@@ -148,12 +112,13 @@ $(document).ready(function() {
     <div class="wolfie"></div>
     <div class="nav-footer">
         <a href="https://www.instagram.com/panteli55/"> <img height=20 width = 20 src="img/ig.png"> </a>
-        <img ahref="#" height=20 width = 20 src="img/tweet.png">
+        <a href="https://www.twitter.com"> <img ahref="#" height=20 width = 20 src="img/tweet.png"> </a>
         <a href="https://www.facebook.com/"> <img height=20 width = 20 src="img/fb.png"> </a>
     </div>
-</div>
 
+</div> <!-- fotter-->
 
 </body>
+
 
 </html>

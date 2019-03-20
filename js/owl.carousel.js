@@ -1072,7 +1072,7 @@ if ( typeof Object.create !== "function" ) {
 				base.prev();
 			});
 			base.$elem.on("owl.play",function(event,speed){
-				base.options.autoPlay = speed;
+				base.options.autoPlay = speed ;
 				base.play();
 				base.hoverStatus = "play";
 			});
@@ -1418,7 +1418,7 @@ if ( typeof Object.create !== "function" ) {
 		itemsScaleUp : false,
 
 		slideSpeed : 200,
-		paginationSpeed : 800,
+		paginationSpeed : 600,
 		rewindSpeed : 1000,
 
 		autoPlay : false,

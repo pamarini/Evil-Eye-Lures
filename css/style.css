@@ -38,7 +38,7 @@ ul{
 /* text in title bar */
 ul li{
   display: inline-block;
-  padding: 45px 10px;
+  padding: 5px 10px;
   font-size: 20px;
 }
 /* just the box, change transparent to color for box around menu items */
@@ -85,6 +85,14 @@ ul li a:hover{
   font-size: 69px;
 }
 
+.main {
+  position: relative;
+  padding-left: 10%;
+  padding-top: 50px;
+}
+.main li{
+  padding-left: 15px;
+}
 /* location of link button; how its made and gallery*/
 .button{
   position: absolute;
@@ -127,7 +135,8 @@ ul li a:hover{
   color: black;
   text-align: center;
   font-size: 60px;
-  height: 750px;
+  height: auto;
+  padding: 20px 0px;
 }
 .sale.a{
   font-size: 26px;
@@ -217,6 +226,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #2b3e51;
   background-color: #ecf0f1;
+
 }
 
 a {
@@ -257,7 +267,7 @@ h1 {
   transition: all .2s;
 }
 .cd-add-to-cart:hover {
-  background: #42a2e1;
+  background: #9f8bfa;
 }
 .cd-add-to-cart:active {
   -webkit-transform: scale(0.9);
@@ -1029,8 +1039,11 @@ text-decoration: none;
 background:#00427a;
 }
 .logo{
-float:left;
+float: left;
 padding-top:1.5em;
+padding-left: 0px;
+padding-right: 30px;
+
 }
 .logo h3{
 color:#fff;
@@ -1695,11 +1708,12 @@ margin:15px 0;
 .items {
 margin-top: 1.5em;
 }
+
 .fotter{
 background:#00427a;
 min-height:150px;
 position:relative;
-bottom: 0px;
+bottom: 0;
 
 }
 .fotter h3 label{
@@ -1733,6 +1747,9 @@ background:#063156;
 padding:4em 0;
 bottom: 0px;
 }
+
+
+/*
 .hotel-info{
 width:50%;
 float:left;
