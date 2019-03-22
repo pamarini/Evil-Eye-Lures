@@ -1,6 +1,6 @@
 /* -------------------------------- 
 
-Primary style
+Primary syle
 
 -------------------------------- 
 *, *::after, *::before {
@@ -32,7 +32,11 @@ body{
 /*title bar at top; position  */
 ul{
   list-style-type: none; /*transparent*/
+
   /*float: right;*/
+}
+.slideshow ul {
+  background:url(../img/package-bg.jpg) repeat-y 0px 0px;
 
 }
 /* text in title bar */
@@ -92,6 +96,21 @@ ul li a:hover{
 }
 .main li{
   padding-left: 15px;
+}
+@media (max-width:730px){
+
+  .main ul{
+    position: left;
+    color: blueviolet;
+  }
+  .title{
+    font-size: 35px;
+  }
+}
+@media (max-width:450px){
+  .title{
+    font-size:20px;
+  }
 }
 /* location of link button; how its made and gallery*/
 .button{
@@ -225,7 +244,9 @@ body {
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #2b3e51;
-  background-color: #ecf0f1;
+ background-color: #b3b3b3;
+  background:url(../img/package-bg.jpg) repeat-y 0px 0px;
+
 
 }
 
@@ -1005,13 +1026,13 @@ Main Components
 
 
 
-/* START OF NEW CSS I GUESS?? */
+/* START OF NEW CSS I GUESS?? 
 html, body{
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   background: #FFf;
 
-}
+}*/
 body a{
 transition:0.5s all;
 -webkit-transition:0.5s all;
@@ -1642,6 +1663,8 @@ cursor:pointer;
 display:inline-block;
 width: 20%;
 }
+
+
 .rooms{
 background:url(../images/rooms.jpg) repeat-y 0px 0px;
 background-size:cover;
@@ -2973,7 +2996,7 @@ font-size: 11px;
 min-height: 170px;
 }
 .banner {
-padding: 0.7em 0 2em 0;
+padding: 0em 0 2em 0;
 }
 .banner-info h3 {
 font-size: 15px;
