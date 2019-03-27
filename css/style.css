@@ -1,26 +1,16 @@
-/* -------------------------------- 
 
-Primary syle
+/*--------------------------------|
+| Peter Marinis - 0571213         |
+|                                 |
+|                                 |
+|---------------------------------*/
 
--------------------------------- 
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-*/
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
 }
-
-/*--------------------------------|
-| start of header (nav bar) style |
-|                                 |
-|                                 |
-|---------------------------------*/
-/* linear gradient dims homepage 
-
-*/
 header{
   height: 50vh;
   background-size: cover;
@@ -146,7 +136,7 @@ ul li a:hover{
   border-radius: 50em;
 
 }
-/* ======== SALE PAGE ========== */
+/* ======== galery  PAGE ========== */
 
 /* style for sale section of main page */
 .sale {
@@ -555,7 +545,7 @@ Main Components
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
-  background: #2c97de;
+  /* background: #2c97de; */
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-size: 1.8rem;
@@ -655,21 +645,22 @@ Main Components
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+/* CART IMAGES */
 .cd-cart .product-image {
-  display: inline-block;
-  float: left;
+  position: relative;
+   float: left; 
   /* the image height determines the height of the list item - in this case height = width */
-  width: 50px;
+  width: 150px;
 }
 .cd-cart .product-image img {
-  display: block;
+  float: left;
+padding-left: 0px;
 }
 .cd-cart .product-details {
   position: relative;
-  display: inline-block;
-  float: right;
+  /* display: inline-block; */
+   float: right; 
   width: calc( 100% - 50px);
-  padding: 0.3em 0 0 0.5em;
 }
 .cd-cart .product-details::after {
   clear: both;
@@ -805,8 +796,9 @@ Main Components
   -webkit-transition-duration: .55s;
           transition-duration: .55s;
 }
+/*CHANGE*/
 .cart-open .cd-cart .checkout {
-  color: #ffffff;
+  color: #c73434;
   -webkit-transition: color .2s .3s;
   transition: color .2s .3s;
 }
@@ -1027,12 +1019,7 @@ Main Components
 
 
 /* START OF NEW CSS I GUESS?? 
-html, body{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100%;
-  background: #FFf;
-
-}*/
+*/
 body a{
 transition:0.5s all;
 -webkit-transition:0.5s all;
@@ -1170,7 +1157,7 @@ position: absolute;
 left: 96%;
 bottom: 48%;
 }
-/* start booking_room */
+/* start booking_room 
 .online_reservation{
 z-index: 999;
 }
@@ -1305,7 +1292,9 @@ border-radius: 9px;
 .date_btn form input[type="submit"]:hover{
 background: #c0910b;
 }
-/* start grids_of_3 */
+
+*/
+/* start grids_of_3 
 .grids_of_3{
 display: block;
 padding: 4% 2% 12%;
@@ -1347,6 +1336,7 @@ line-height: 1.8em;
 .grid1_of_3_img{
   position: relative;	
 }
+*/
 /* start footer */
 .footer{
 padding: 4% 2% 2%;
@@ -1370,9 +1360,8 @@ transition: all 0.3s ease-in-out;
 .copy p a:hover{
 color: #9c9c9c;
 }
-}
 
-/* start soc_icons */
+/* start soc_icons 
 .soc_icons {
 text-align: center;
 }
@@ -1425,7 +1414,8 @@ opacity: 0.7;
 -o-transition: opacity .15s ease-in-out;
 transition: opacity .15s ease-in-out;
 }
-/* start f_nav */
+*/
+/* start f_nav 
 .f_nav{
 float: right;
 margin-top: 10px;
@@ -1451,8 +1441,8 @@ transition: all 0.3s ease-in-out;
 .f_nav li a:hover{
 color: #52ABDF;
 }
+*/
 /* start rooms and suits */
-
 /*
 .main{
 padding: 4% 2%;
@@ -1561,7 +1551,7 @@ margin-left: 4.063156%;
 }
 
 */
-/* res_online */
+/* res_online 
 .res_online h4 {
 text-transform: capitalize;
 font-size: 1.5em;
@@ -1652,6 +1642,7 @@ margin:0 auto;
 color:#606367;
 line-height:1.8em;
 }
+*/
 .image-grid img{
 border-radius:50%;
 width:200px;
@@ -1663,8 +1654,7 @@ cursor:pointer;
 display:inline-block;
 width: 20%;
 }
-
-
+/*
 .rooms{
 background:url(../images/rooms.jpg) repeat-y 0px 0px;
 background-size:cover;
@@ -1694,6 +1684,8 @@ width: 100%;
 margin: 10px 0;
 line-height:1.5em;
 }
+*/
+/* REQUIRED FOR OWL CORROSELL?? */
 .items li{
 display: inline-block;
 list-style-type: none;
@@ -1731,7 +1723,7 @@ margin:15px 0;
 .items {
 margin-top: 1.5em;
 }
-
+/* FOOTER */
 .fotter{
 background:#00427a;
 min-height:150px;
@@ -1764,13 +1756,12 @@ display:block;
 position:absolute;
 top:-75%;
 left:60%;
-}
+} 
 .fotter-info{
 background:#063156;
 padding:4em 0;
 bottom: 0px;
 }
-
 
 /*
 .hotel-info{
@@ -1966,7 +1957,10 @@ color:#c0910b;
 .fotter-info h6 a:hover{
 color:#FFD700;
 }
-/*--FACILITIES-PAGE--*/
+
+
+/*--FACILITIES-PAGE--
+
 .main_bg{
 background:url(../img/package-bg.jpg) repeat-y 0px 0px;
 background-size:cover;
@@ -1982,7 +1976,6 @@ display: block;
 margin-top:4%;
 }
 .service_list li{
-float: left;
 width: 22.3333%;
 margin-left: 3.3333%;
 position: relative;
@@ -2038,6 +2031,7 @@ position: relative;
 .ser_img img{
 width:100%;
 }
+
 span.next{
 -o-transition-duration: 1s;
 -moz-transition-duration: 1s;
@@ -2063,7 +2057,8 @@ opacity: 0.9;
 -o-transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;
 }
-/*--RESTAURANT-PAGE--*/
+*/
+/*--RESTAURANT-PAGE--
 .caption{
 display:none;
 top:0;
@@ -2255,7 +2250,8 @@ display: block;
 width: 62%;
 text-align: center;
 }
-/*--CONFERENCE-PAGE--*/
+*/
+/*--CONFERENCE-PAGE--
 .confer{
 background:url(../images/rooms.jpg) repeat-y 0px 0px;
 background-size:cover;
@@ -2342,6 +2338,8 @@ border:1px solid #000;
 #slider3-pager a {
 padding:0.2em;
 }
+*/
+
 /*-- responsive-mediaqueries --*/
 @media (max-width:768px){
 #slider3-pager a {
@@ -2378,7 +2376,7 @@ padding:0.2em;
   bottom: 25px;
 }
 }
-/*-- responsive-mediaqueries --*/
+/*-- responsive-mediaqueries --
 .confer h4{
 color:#00427a;
 font-size:25px;
@@ -2454,7 +2452,8 @@ font-family: 'Roboto', sans-serif;
 cursor: pointer;
 position: relative;
 }
-/*--Booking--*/
+*/
+/*--Booking--
 .contact-bg2 {
 background: url(../images/rooms.jpg) repeat-y 0px 0px;
 background-size: cover;
@@ -2570,7 +2569,8 @@ margin-bottom: 3em;
 .LatestNews span{
 font-size:0.75em;
 }
-/*--CONTACT-page--*/
+*/
+/*--CONTACT-page--
 .contact-bg{
 background:url(../images/rooms.jpg) repeat-y 0px 0px;
 background-size:cover;
@@ -2684,6 +2684,8 @@ border-radius: 2px;
 background: #00427a;
 border: 1px solid #00427a;
 }
+*/
+
 /*--Responsive-media-*/
 @media (max-width:1440px){
 .man {
@@ -2807,6 +2809,7 @@ height: 19px;
 .image-grid ul li {
 width: 21%;
 }
+/*
 .conference-rslide img{
 width:1000px;
 height:400px;
@@ -2834,6 +2837,7 @@ height: 36px;
 .rooms {
 min-height: 610px;
 }
+*/
 .fotter-info {
 padding: 3em 0;
 }
@@ -2852,6 +2856,7 @@ margin: 0.7em 0 0 0em;
 font-size: 15px;
 margin: 0.5em 0 0 0em;
 }
+/*
 .member form input[type="text"],.member form input[type="password"] {
 width: 78%!important;
 }
@@ -2889,7 +2894,6 @@ text-align: left;
 margin-left: 18%;
 margin-top: 0;
 }
-/*----*/
 .service_list li h3 {
 margin: 10px 0 0px;
 font-size:14px;
@@ -2898,7 +2902,6 @@ p.para {
 font-size: 0.8em;
 line-height: 19px;
 }
-/*----*/
 .hotel-details a {
 font-size: 25px;
 }
@@ -2945,7 +2948,7 @@ padding: 2em 0;
 .rslides img {
 height: 356px;
 }
-/*----*/
+
 .conference-slider {
 width: 100%;
 }
@@ -2960,7 +2963,7 @@ font-size: 23px;
 .confer {
 padding-bottom: 7em;
 }
-/*----*/
+
 .rooms {
 min-height: 586px;
 }
@@ -2971,19 +2974,23 @@ height: 58%;
 .caption a {
 padding: 3px;
 }
-/*----*/
+
 .contact-bg {
 padding-bottom: 3em;
 }
 }
-
-
-
+*/
+}
 @media (max-width:768px){
 .logo {
 float: left;
 padding: 1em;
 width: 30%;
+}
+.wolfie {
+  width:35%;
+  margin-left: 20px;
+  margin-top: -33px;
 }
 .logo img {
 width: 25%;
@@ -3006,6 +3013,7 @@ width: 46%;
 font-size: 2em;
 padding: 8px 0;
 }
+/*
 .online_reservation {
 top: 26%;
 left: 1%;
@@ -3039,6 +3047,7 @@ font-size: 12px;
 left: 11%;
 top:-2.5em;
 }
+*/
 .package h3 {
 font-size: 2.5em;
 }
@@ -3070,6 +3079,8 @@ padding: 3em 0;
 }
 .fotter {
 min-height: 105px;
+position:relative;
+bottom: 0;
 }
 .fotter h3 {
 font-size: 2em;
@@ -3082,7 +3093,7 @@ width: 80%;
 .member form input[type="text"],.member form input[type="password"] {
 width: 70%!important;
 }
-/*----*/
+
 /*
 .service_list li h3 {
 margin: 5px 0 0px;
@@ -3097,7 +3108,7 @@ padding: 2%;
 .details a h2 {
 font-size: 24px;
 }
-/*----*/
+
 .hotel-details a {
 font-size: 22px;
 }
@@ -3105,12 +3116,13 @@ font-size: 22px;
 margin: 5px 0;
 font-size: 20px;
 }
+.hotel-welcome label {
+width: 45%;
+}
+*/
 .rslides img {
 height: 320px;
 width: 100%;
-}
-.hotel-welcome label {
-width: 45%;
 }
 .content-grids {
 background:none;
@@ -3184,13 +3196,10 @@ font-size: 0.85em;
 padding-bottom: 0px;
 }
 }
+
 @media (max-width:640px){
 .logo {
 width: 38%;
-}
-span.menu:before {
-content: url(../images/nav.png);
-cursor: pointer;		
 }
 .top-menu {
 float: none;	
@@ -3281,6 +3290,7 @@ min-height: 500px;
 }
 .fotter {
 min-height: 105px;
+bottom: 0;
 }
 .fotter h3 {
 font-size: 22px;
@@ -3347,6 +3357,9 @@ height: 249px;
 width: 100%;
 }
 }
+
+
+
 @media (max-width:480px){
 .logo {
 padding: 0.7em;
@@ -3438,6 +3451,7 @@ font-size: 20px;
 }
 .fotter {
 min-height: 78px;
+bottom: 0;
 }
 .items {
 margin-top: 1em;
@@ -3529,6 +3543,7 @@ width: 100%;
 }
 .fotter {
 min-height: 83px;
+bottom: 0;
 }
 .join {
 width: 100%;
