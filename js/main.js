@@ -170,17 +170,25 @@ jQuery(document).ready(function($){
 	}
 });
 
-//scrolling function for sticky nav bar 
+//scrolling function for sticky nav bar
+// WHEN user scrolls past 300px then display 
 window.onscroll = function() {
-	if (window.pageYOffset>300){
-	  nav.style.background = "#FddFFFD9";
+	if (window.pageYOffset>=300){
+	 // nav.style.background = "#FddFFFD9";
 	   //nav.style.opacity = .4;
-	  }	  
+	   	nav.style.background = "#4DBAF9D9"
+		$(".main").addClass("mainMove");
+		$(".logo img").addClass("logoMove");
+
+	}	  
 	  else{ 
 		  nav.style.background = "transparent";
+		  $(".main").removeClass("mainMove");
+		  $(".logo img").removeClass("logoMove");
+
+
 	 }
 } 
-
 
 // displaying pictures in gallery 
 var elements = document.getElementsByClassName("column");
